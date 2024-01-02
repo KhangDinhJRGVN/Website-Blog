@@ -57,3 +57,14 @@ function searchFuntion(searchID) {
   var x = document.getElementById(searchID);
   x.classList.toggle("active");
 }
+document.addEventListener("click", function (event) {
+  var searchElement = document.getElementById("search-funtion-1");
+  var searchIcon = document.querySelector(".fa-magnifying-glass");
+  // Kiểm tra xem người dùng có nhấp vào phần tử tìm kiếm hay biểu tượng tìm kiếm không
+  if (
+    !searchElement.contains(event.target) &&
+    !searchIcon.contains(event.target)
+  ) {
+    searchElement.classList.remove("active");
+  }
+});
