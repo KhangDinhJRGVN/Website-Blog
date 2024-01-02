@@ -59,6 +59,7 @@
           align-items: center;
           justify-content: space-around;
           height: 50px;
+          z-index: 99;
         "
       >
         <!-- 6-item-naviga -->
@@ -191,14 +192,99 @@
             <!-- left -->
             <div style="display: flex; flex-direction: column; gap: 20px">
               <div class="border-image-home">
-                <img
-                  alt="Blogstar Responsive Blogger Template"
-                  id="Header1_headerimg"
-                  src="https://source.unsplash.com/random"
-                  style="display: block"
-                  width="100%"
-                  height="400px"
-                />
+                <div style="position: relative; overflow: hidden">
+                  <img
+                    alt="Blogstar Responsive Blogger Template"
+                    id="Header1_headerimg"
+                    src="https://source.unsplash.com/random"
+                    style="display: block"
+                    width="100%;"
+                    height="400px"
+                  />
+                  <p
+                    class="image-name-left"
+                    style="
+                      position: absolute;
+                      top: -34px;
+                      left: 10px;
+                      background-color: tomato;
+                      padding: 5px;
+                      color: white;
+                      transition: all 0.3s;
+                    "
+                  >
+                    khang
+                  </p>
+                  <div
+                    class="image-name-right"
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      position: absolute;
+                      right: -65px;
+                      top: 10px;
+                      gap: 10px;
+                      transition: all 0.3s;
+                    "
+                  >
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        padding: 8px;
+                        background-color: white;
+                        gap: 4px;
+                        border: 1px solid #cfcdcd;
+                      "
+                    >
+                      <span style="font-size: 18px">2015</span>
+                      <hr
+                        style="
+                          height: 3px;
+                          width: 100%;
+                          background-color: black;
+                        "
+                      />
+                      <span style="font-size: 12px">MAY/28</span>
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        padding: 8px;
+                        background-color: white;
+                        gap: 7px;
+                        border: 1px solid #cfcdcd;
+                      "
+                    >
+                      <i class="fa-solid fa-comment"></i>
+                      <hr
+                        style="
+                          height: 3px;
+                          width: 100%;
+                          background-color: black;
+                        "
+                      />
+                      <span style="font-size: 12px">8</span>
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      position: absolute;
+                      bottom: 0;
+                      background-color: rgba(245, 245, 245, 0.3);
+                      width: 100%;
+                      padding: 30px;
+                      color: white;
+                    "
+                  >
+                    <p>khang</p>
+                  </div>
+                </div>
                 <div style="display: grid; gap: 20px; padding: 30px">
                   <h4 class="style-title" style="color: black">
                     PAPILION MINTER SAVIOR
@@ -245,7 +331,13 @@
               </div>
               <div
                 class="border-image-home"
-                style="display: grid; gap: 20px; padding: 30px"
+                style="
+                  display: grid;
+                  gap: 20px;
+                  padding: 30px;
+                  position: relative;
+                  overflow: hidden;
+                "
               >
                 <h4 class="style-title" style="color: black">
                   RIGHT PATH MYSTERY
@@ -288,24 +380,159 @@
                     ></i>
                   </div>
                 </div>
+                <!-- hover calendar -->
+                <div
+                  class="image-name-right"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    right: -65px;
+                    top: 10px;
+                    gap: 10px;
+                    transition: all 0.3s;
+                  "
+                >
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      flex-direction: column;
+                      padding: 8px;
+                      background-color: white;
+                      gap: 4px;
+                      border: 1px solid #cfcdcd;
+                    "
+                  >
+                    <span style="font-size: 18px">2015</span>
+                    <hr
+                      style="height: 3px; width: 100%; background-color: black"
+                    />
+                    <span style="font-size: 12px">MAY/28</span>
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      flex-direction: column;
+                      padding: 8px;
+                      background-color: white;
+                      gap: 7px;
+                      border: 1px solid #cfcdcd;
+                    "
+                  >
+                    <i class="fa-solid fa-comment"></i>
+                    <hr
+                      style="height: 3px; width: 100%; background-color: black"
+                    />
+                    <span style="font-size: 12px">8</span>
+                  </div>
+                </div>
               </div>
               <div class="border-image-home">
-                <img
-                  alt="Blogstar Responsive Blogger Template"
-                  id="Header1_headerimg"
-                  src="https://source.unsplash.com/random"
-                  style="display: block"
-                  width="100%"
-                  height="400px"
-                />
+                <div style="position: relative; overflow: hidden">
+                  <img
+                    alt="Blogstar Responsive Blogger Template"
+                    id="Header1_headerimg"
+                    src="https://source.unsplash.com/random"
+                    style="display: block"
+                    width="100%;"
+                    height="400px"
+                  />
+                  <p
+                    class="image-name-left"
+                    style="
+                      position: absolute;
+                      top: -34px;
+                      left: 10px;
+                      background-color: tomato;
+                      padding: 5px;
+                      color: white;
+                      transition: all 0.3s;
+                    "
+                  >
+                    khang
+                  </p>
+                  <div
+                    class="image-name-right"
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      position: absolute;
+                      right: -65px;
+                      top: 10px;
+                      gap: 10px;
+                      transition: all 0.3s;
+                    "
+                  >
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        padding: 8px;
+                        background-color: white;
+                        gap: 4px;
+                        border: 1px solid #cfcdcd;
+                      "
+                    >
+                      <span style="font-size: 18px">2015</span>
+                      <hr
+                        style="
+                          height: 3px;
+                          width: 100%;
+                          background-color: black;
+                        "
+                      />
+                      <span style="font-size: 12px">MAY/28</span>
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        padding: 8px;
+                        background-color: white;
+                        gap: 7px;
+                        border: 1px solid #cfcdcd;
+                      "
+                    >
+                      <i class="fa-solid fa-comment"></i>
+                      <hr
+                        style="
+                          height: 3px;
+                          width: 100%;
+                          background-color: black;
+                        "
+                      />
+                      <span style="font-size: 12px">8</span>
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      position: absolute;
+                      bottom: 0;
+                      background-color: rgba(245, 245, 245, 0.3);
+                      width: 100%;
+                      padding: 30px;
+                      color: white;
+                    "
+                  >
+                    <p>khang</p>
+                  </div>
+                </div>
                 <div style="display: grid; gap: 20px; padding: 30px">
                   <h4 class="style-title" style="color: black">
-                    WAYS TO REMEMBER SOMETHING
+                    PAPILION MINTER SAVIOR
                   </h4>
                   <p style="font-size: 13px">
                     Ut wisi enim ad minim veniam, quis nostrud exerci tation
                     ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-                    consequat. Du...
+                    consequat....
                   </p>
                   <div
                     style="
@@ -316,7 +543,7 @@
                   >
                     <p class="label-border-readmore">READ MORE</p>
                     <div style="display: flex; gap: 10px; align-items: center">
-                      <div class="menu-share" id="menu-share-3">
+                      <div class="menu-share" id="menu-share-1">
                         <i
                           class="fa-brands fa-facebook Naviga-icon border-icon-image-navigation"
                         ></i>
@@ -336,29 +563,114 @@
                       <i
                         class="fa-solid fa-share-nodes"
                         style="color: tomato; cursor: pointer"
-                        onclick="menuShare('menu-share-3')"
+                        onclick="menuShare('menu-share-1')"
                       ></i>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="border-image-home">
-                <img
-                  alt="Blogstar Responsive Blogger Template"
-                  id="Header1_headerimg"
-                  src="https://source.unsplash.com/random"
-                  style="display: block"
-                  width="100%"
-                  height="400px"
-                />
+                <div style="position: relative; overflow: hidden">
+                  <img
+                    alt="Blogstar Responsive Blogger Template"
+                    id="Header1_headerimg"
+                    src="https://source.unsplash.com/random"
+                    style="display: block"
+                    width="100%;"
+                    height="400px"
+                  />
+                  <p
+                    class="image-name-left"
+                    style="
+                      position: absolute;
+                      top: -34px;
+                      left: 10px;
+                      background-color: tomato;
+                      padding: 5px;
+                      color: white;
+                      transition: all 0.3s;
+                    "
+                  >
+                    khang
+                  </p>
+                  <div
+                    class="image-name-right"
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      position: absolute;
+                      right: -65px;
+                      top: 10px;
+                      gap: 10px;
+                      transition: all 0.3s;
+                    "
+                  >
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        padding: 8px;
+                        background-color: white;
+                        gap: 4px;
+                        border: 1px solid #cfcdcd;
+                      "
+                    >
+                      <span style="font-size: 18px">2015</span>
+                      <hr
+                        style="
+                          height: 3px;
+                          width: 100%;
+                          background-color: black;
+                        "
+                      />
+                      <span style="font-size: 12px">MAY/28</span>
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        padding: 8px;
+                        background-color: white;
+                        gap: 7px;
+                        border: 1px solid #cfcdcd;
+                      "
+                    >
+                      <i class="fa-solid fa-comment"></i>
+                      <hr
+                        style="
+                          height: 3px;
+                          width: 100%;
+                          background-color: black;
+                        "
+                      />
+                      <span style="font-size: 12px">8</span>
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      position: absolute;
+                      bottom: 0;
+                      background-color: rgba(245, 245, 245, 0.3);
+                      width: 100%;
+                      padding: 30px;
+                      color: white;
+                    "
+                  >
+                    <p>khang</p>
+                  </div>
+                </div>
                 <div style="display: grid; gap: 20px; padding: 30px">
                   <h4 class="style-title" style="color: black">
-                    SIMPLE VIMEO POST
+                    PAPILION MINTER SAVIOR
                   </h4>
                   <p style="font-size: 13px">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nulla elementum viverra pharetra. Nulla facilisis, sapien
-                    non pharetra venenatis, t...
+                    Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                    consequat....
                   </p>
                   <div
                     style="
@@ -369,7 +681,7 @@
                   >
                     <p class="label-border-readmore">READ MORE</p>
                     <div style="display: flex; gap: 10px; align-items: center">
-                      <div class="menu-share" id="menu-share-4">
+                      <div class="menu-share" id="menu-share-1">
                         <i
                           class="fa-brands fa-facebook Naviga-icon border-icon-image-navigation"
                         ></i>
@@ -389,7 +701,7 @@
                       <i
                         class="fa-solid fa-share-nodes"
                         style="color: tomato; cursor: pointer"
-                        onclick="menuShare('menu-share-4')"
+                        onclick="menuShare('menu-share-1')"
                       ></i>
                     </div>
                   </div>
@@ -399,22 +711,107 @@
             <!-- right -->
             <div style="display: flex; flex-direction: column; gap: 20px">
               <div class="border-image-home">
-                <img
-                  alt="Blogstar Responsive Blogger Template"
-                  id="Header1_headerimg"
-                  src="https://source.unsplash.com/random"
-                  style="display: block"
-                  width="100%"
-                  height="400px"
-                />
+                <div style="position: relative; overflow: hidden">
+                  <img
+                    alt="Blogstar Responsive Blogger Template"
+                    id="Header1_headerimg"
+                    src="https://source.unsplash.com/random"
+                    style="display: block"
+                    width="100%;"
+                    height="400px"
+                  />
+                  <p
+                    class="image-name-left"
+                    style="
+                      position: absolute;
+                      top: -34px;
+                      left: 10px;
+                      background-color: tomato;
+                      padding: 5px;
+                      color: white;
+                      transition: all 0.3s;
+                    "
+                  >
+                    khang
+                  </p>
+                  <div
+                    class="image-name-right"
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      position: absolute;
+                      right: -65px;
+                      top: 10px;
+                      gap: 10px;
+                      transition: all 0.3s;
+                    "
+                  >
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        padding: 8px;
+                        background-color: white;
+                        gap: 4px;
+                        border: 1px solid #cfcdcd;
+                      "
+                    >
+                      <span style="font-size: 18px">2015</span>
+                      <hr
+                        style="
+                          height: 3px;
+                          width: 100%;
+                          background-color: black;
+                        "
+                      />
+                      <span style="font-size: 12px">MAY/28</span>
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        padding: 8px;
+                        background-color: white;
+                        gap: 7px;
+                        border: 1px solid #cfcdcd;
+                      "
+                    >
+                      <i class="fa-solid fa-comment"></i>
+                      <hr
+                        style="
+                          height: 3px;
+                          width: 100%;
+                          background-color: black;
+                        "
+                      />
+                      <span style="font-size: 12px">8</span>
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      position: absolute;
+                      bottom: 0;
+                      background-color: rgba(245, 245, 245, 0.3);
+                      width: 100%;
+                      padding: 30px;
+                      color: white;
+                    "
+                  >
+                    <p>khang</p>
+                  </div>
+                </div>
                 <div style="display: grid; gap: 20px; padding: 30px">
                   <h4 class="style-title" style="color: black">
-                    DRAUGHT VAEIN MYNEL
+                    PAPILION MINTER SAVIOR
                   </h4>
                   <p style="font-size: 13px">
                     Ut wisi enim ad minim veniam, quis nostrud exerci tation
                     ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-                    consequat. Du...
+                    consequat....
                   </p>
                   <div
                     style="
@@ -425,7 +822,7 @@
                   >
                     <p class="label-border-readmore">READ MORE</p>
                     <div style="display: flex; gap: 10px; align-items: center">
-                      <div class="menu-share" id="menu-share-5">
+                      <div class="menu-share" id="menu-share-1">
                         <i
                           class="fa-brands fa-facebook Naviga-icon border-icon-image-navigation"
                         ></i>
@@ -445,29 +842,114 @@
                       <i
                         class="fa-solid fa-share-nodes"
                         style="color: tomato; cursor: pointer"
-                        onclick="menuShare('menu-share-5')"
+                        onclick="menuShare('menu-share-1')"
                       ></i>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="border-image-home">
-                <img
-                  alt="Blogstar Responsive Blogger Template"
-                  id="Header1_headerimg"
-                  src="https://source.unsplash.com/random"
-                  style="display: block"
-                  width="100%"
-                  height="400px"
-                />
+                <div style="position: relative; overflow: hidden">
+                  <img
+                    alt="Blogstar Responsive Blogger Template"
+                    id="Header1_headerimg"
+                    src="https://source.unsplash.com/random"
+                    style="display: block"
+                    width="100%;"
+                    height="400px"
+                  />
+                  <p
+                    class="image-name-left"
+                    style="
+                      position: absolute;
+                      top: -34px;
+                      left: 10px;
+                      background-color: tomato;
+                      padding: 5px;
+                      color: white;
+                      transition: all 0.3s;
+                    "
+                  >
+                    khang
+                  </p>
+                  <div
+                    class="image-name-right"
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      position: absolute;
+                      right: -65px;
+                      top: 10px;
+                      gap: 10px;
+                      transition: all 0.3s;
+                    "
+                  >
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        padding: 8px;
+                        background-color: white;
+                        gap: 4px;
+                        border: 1px solid #cfcdcd;
+                      "
+                    >
+                      <span style="font-size: 18px">2015</span>
+                      <hr
+                        style="
+                          height: 3px;
+                          width: 100%;
+                          background-color: black;
+                        "
+                      />
+                      <span style="font-size: 12px">MAY/28</span>
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        padding: 8px;
+                        background-color: white;
+                        gap: 7px;
+                        border: 1px solid #cfcdcd;
+                      "
+                    >
+                      <i class="fa-solid fa-comment"></i>
+                      <hr
+                        style="
+                          height: 3px;
+                          width: 100%;
+                          background-color: black;
+                        "
+                      />
+                      <span style="font-size: 12px">8</span>
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      position: absolute;
+                      bottom: 0;
+                      background-color: rgba(245, 245, 245, 0.3);
+                      width: 100%;
+                      padding: 30px;
+                      color: white;
+                    "
+                  >
+                    <p>khang</p>
+                  </div>
+                </div>
                 <div style="display: grid; gap: 20px; padding: 30px">
                   <h4 class="style-title" style="color: black">
-                    MY STYLE STATEMENT
+                    PAPILION MINTER SAVIOR
                   </h4>
                   <p style="font-size: 13px">
                     Ut wisi enim ad minim veniam, quis nostrud exerci tation
                     ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-                    consequat. Du...
+                    consequat....
                   </p>
                   <div
                     style="
@@ -478,7 +960,7 @@
                   >
                     <p class="label-border-readmore">READ MORE</p>
                     <div style="display: flex; gap: 10px; align-items: center">
-                      <div class="menu-share" id="menu-share-6">
+                      <div class="menu-share" id="menu-share-1">
                         <i
                           class="fa-brands fa-facebook Naviga-icon border-icon-image-navigation"
                         ></i>
@@ -498,29 +980,114 @@
                       <i
                         class="fa-solid fa-share-nodes"
                         style="color: tomato; cursor: pointer"
-                        onclick="menuShare('menu-share-6')"
+                        onclick="menuShare('menu-share-1')"
                       ></i>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="border-image-home">
-                <img
-                  alt="Blogstar Responsive Blogger Template"
-                  id="Header1_headerimg"
-                  src="https://source.unsplash.com/random"
-                  style="display: block"
-                  width="100%"
-                  height="400px"
-                />
+                <div style="position: relative; overflow: hidden">
+                  <img
+                    alt="Blogstar Responsive Blogger Template"
+                    id="Header1_headerimg"
+                    src="https://source.unsplash.com/random"
+                    style="display: block"
+                    width="100%;"
+                    height="400px"
+                  />
+                  <p
+                    class="image-name-left"
+                    style="
+                      position: absolute;
+                      top: -34px;
+                      left: 10px;
+                      background-color: tomato;
+                      padding: 5px;
+                      color: white;
+                      transition: all 0.3s;
+                    "
+                  >
+                    khang
+                  </p>
+                  <div
+                    class="image-name-right"
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      position: absolute;
+                      right: -65px;
+                      top: 10px;
+                      gap: 10px;
+                      transition: all 0.3s;
+                    "
+                  >
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        padding: 8px;
+                        background-color: white;
+                        gap: 4px;
+                        border: 1px solid #cfcdcd;
+                      "
+                    >
+                      <span style="font-size: 18px">2015</span>
+                      <hr
+                        style="
+                          height: 3px;
+                          width: 100%;
+                          background-color: black;
+                        "
+                      />
+                      <span style="font-size: 12px">MAY/28</span>
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        padding: 8px;
+                        background-color: white;
+                        gap: 7px;
+                        border: 1px solid #cfcdcd;
+                      "
+                    >
+                      <i class="fa-solid fa-comment"></i>
+                      <hr
+                        style="
+                          height: 3px;
+                          width: 100%;
+                          background-color: black;
+                        "
+                      />
+                      <span style="font-size: 12px">8</span>
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      position: absolute;
+                      bottom: 0;
+                      background-color: rgba(245, 245, 245, 0.3);
+                      width: 100%;
+                      padding: 30px;
+                      color: white;
+                    "
+                  >
+                    <p>khang</p>
+                  </div>
+                </div>
                 <div style="display: grid; gap: 20px; padding: 30px">
                   <h4 class="style-title" style="color: black">
-                    AMAZING VIDEO QUALITY VIMEO
+                    PAPILION MINTER SAVIOR
                   </h4>
                   <p style="font-size: 13px">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nulla elementum viverra pharetra. Nulla facilisis, sapien
-                    non pharetra venena...
+                    Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                    consequat....
                   </p>
                   <div
                     style="
@@ -531,7 +1098,7 @@
                   >
                     <p class="label-border-readmore">READ MORE</p>
                     <div style="display: flex; gap: 10px; align-items: center">
-                      <div class="menu-share" id="menu-share-7">
+                      <div class="menu-share" id="menu-share-1">
                         <i
                           class="fa-brands fa-facebook Naviga-icon border-icon-image-navigation"
                         ></i>
@@ -551,7 +1118,7 @@
                       <i
                         class="fa-solid fa-share-nodes"
                         style="color: tomato; cursor: pointer"
-                        onclick="menuShare('menu-share-7')"
+                        onclick="menuShare('menu-share-1')"
                       ></i>
                     </div>
                   </div>
@@ -559,7 +1126,13 @@
               </div>
               <div
                 class="border-image-home"
-                style="display: grid; gap: 20px; padding: 30px"
+                style="
+                  display: grid;
+                  gap: 20px;
+                  padding: 30px;
+                  position: relative;
+                  overflow: hidden;
+                "
               >
                 <h4 class="style-title" style="color: black">
                   SIMPLE YOUTUBE POST
@@ -600,6 +1173,56 @@
                       style="color: tomato; cursor: pointer"
                       onclick="menuShare('menu-share-8')"
                     ></i>
+                  </div>
+                </div>
+                <!-- hover calendar -->
+                <div
+                  class="image-name-right"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    right: -65px;
+                    top: 10px;
+                    gap: 10px;
+                    transition: all 0.3s;
+                  "
+                >
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      flex-direction: column;
+                      padding: 8px;
+                      background-color: white;
+                      gap: 4px;
+                      border: 1px solid #cfcdcd;
+                    "
+                  >
+                    <span style="font-size: 18px">2015</span>
+                    <hr
+                      style="height: 3px; width: 100%; background-color: black"
+                    />
+                    <span style="font-size: 12px">MAY/28</span>
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      flex-direction: column;
+                      padding: 8px;
+                      background-color: white;
+                      gap: 7px;
+                      border: 1px solid #cfcdcd;
+                    "
+                  >
+                    <i class="fa-solid fa-comment"></i>
+                    <hr
+                      style="height: 3px; width: 100%; background-color: black"
+                    />
+                    <span style="font-size: 12px">8</span>
                   </div>
                 </div>
               </div>
@@ -1008,7 +1631,7 @@
         <span style="display: flex; gap: 5px">
           <p>CREATED BY</p>
           <p class="hover-bottom-popular-post" style="color: #f04545">
-            THEMEXPOSE
+            Khang Đinh
           </p>
         </span>
       </div>

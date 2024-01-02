@@ -288,12 +288,9 @@ body {
   color: tomato !important;
   cursor: pointer;
 }
-.border-image-home:hover .image-container .image-name-left {
+.border-image-home:hover .image-name-left {
   top: 10px !important;
 }
-.border-image-home:hover
-  .image-container
-  .image-name-right
-  .image-name-right-right {
+.border-image-home:hover .image-name-right {
   right: 10px !important;
 }
