@@ -59,6 +59,7 @@ body {
   border-color: #e7e4e4;
   font-size: 11px;
   padding: 7px;
+  cursor: pointer;
 }
 
 .label-border-right:hover {
@@ -293,4 +294,13 @@ body {
 }
 .border-image-home:hover .image-name-right {
   right: 10px !important;
+}
+.search-funtion {
+  display: flex;
+  gap: 5px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.search-funtion.active {
+  opacity: 1;
 }

@@ -51,3 +51,9 @@ function menuShare(menuId) {
   var x = document.getElementById(menuId);
   x.classList.toggle("active");
 }
+
+///////////Search/////////
+function searchFuntion(searchID) {
+  var x = document.getElementById(searchID);
+  x.classList.toggle("active");
+}
