@@ -68,3 +68,14 @@ document.addEventListener("click", function (event) {
     searchElement.classList.remove("active");
   }
 });
+////////////////////////////////Focus-clear-value-search////////////////////////////////
+function clearInputValue(element) {
+  if (element.value === "Search and hit enter") {
+    element.value = "";
+  }
+}
+function resetInputValue(element) {
+  if (element.value === "") {
+    element.value = "Search and hit enter";
+  }
+}

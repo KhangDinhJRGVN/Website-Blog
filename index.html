@@ -73,31 +73,20 @@
             <p class="Naviga-bar">DROP DOWN +</p>
             <div class="dropdown-content" id="dropdownSubMenu">
               <a href="#">MINIMAL</a>
-              <hr style="width: 100%; height: 0.5px; background-color: black" />
               <!-- sub-dropdown-->
-              <div class="sub-menu-with-subs dropdown-item">
-                <a href="#">SUB MENU WITH SUBS +</a>
+              <div class="sub-menu" style="position: relative">
+                <a href="#" class="sub-menu-with-subs">SUB MENU WITH SUBS +</a>
                 <div class="sub-dropdown-item" id="subDropdown">
-                  <hr
-                    style="width: 100%; height: 0.5px; background-color: black"
-                  />
                   <a href="#">FEMINIST</a>
-                  <hr
-                    style="width: 100%; height: 0.5px; background-color: black"
-                  />
                   <a href="#">PERSONA</a>
-                  <hr
-                    style="width: 100%; height: 0.5px; background-color: black"
-                  />
                   <a href="#">EXPOSE</a>
                 </div>
               </div>
-              <hr style="width: 100%; height: 0.5px; background-color: black" />
               <a href="#">POWERGAME</a>
-              <hr style="width: 100%; height: 0.5px; background-color: black" />
               <a href="#">FASHION</a>
             </div>
           </div>
+
           <p class="Naviga-bar">RESTAURANT</p>
           <div class="dropdown-menu" style="height: 100%">
             <p class="Naviga-bar">MEGA MENU +</p>
@@ -190,7 +179,7 @@
             <input
               class="search-funtion"
               id="search-funtion-1"
-              type="text"
+              type="search"
               style="
                 height: 40px;
                 padding-left: 10px;
@@ -200,7 +189,9 @@
                 border: 1px solid #e8e8e8;
                 outline: none;
               "
-              placeholder="Search and hit enter"
+              value="Search and hit enter"
+              onfocus="clearInputValue(this)"
+              onblur="resetInputValue(this)"
             />
           </div>
         </div>
@@ -429,7 +420,11 @@
                   >
                     <span style="font-size: 18px">2015</span>
                     <hr
-                      style="height: 3px; width: 100%; background-color: black"
+                      style="
+                        height: 3px;
+                        width: 100%;
+                        background-color: #e8e8e8;
+                      "
                     />
                     <span style="font-size: 12px">MAY/28</span>
                   </div>
@@ -447,7 +442,11 @@
                   >
                     <i class="fa-solid fa-comment"></i>
                     <hr
-                      style="height: 3px; width: 100%; background-color: black"
+                      style="
+                        height: 3px;
+                        width: 100%;
+                        background-color: #e8e8e8;
+                      "
                     />
                     <span style="font-size: 12px">8</span>
                   </div>
@@ -506,7 +505,7 @@
                         style="
                           height: 3px;
                           width: 100%;
-                          background-color: black;
+                          background-color: #e8e8e8;
                         "
                       />
                       <span style="font-size: 12px">MAY/28</span>
@@ -528,7 +527,7 @@
                         style="
                           height: 3px;
                           width: 100%;
-                          background-color: black;
+                          background-color: #e8e8e8;
                         "
                       />
                       <span style="font-size: 12px">8</span>
@@ -644,7 +643,7 @@
                         style="
                           height: 3px;
                           width: 100%;
-                          background-color: black;
+                          background-color: #e8e8e8;
                         "
                       />
                       <span style="font-size: 12px">MAY/28</span>
@@ -666,7 +665,7 @@
                         style="
                           height: 3px;
                           width: 100%;
-                          background-color: black;
+                          background-color: #e8e8e8;
                         "
                       />
                       <span style="font-size: 12px">8</span>
@@ -785,7 +784,7 @@
                         style="
                           height: 3px;
                           width: 100%;
-                          background-color: black;
+                          background-color: #e8e8e8;
                         "
                       />
                       <span style="font-size: 12px">MAY/28</span>
@@ -807,7 +806,7 @@
                         style="
                           height: 3px;
                           width: 100%;
-                          background-color: black;
+                          background-color: #e8e8e8;
                         "
                       />
                       <span style="font-size: 12px">8</span>
@@ -923,7 +922,7 @@
                         style="
                           height: 3px;
                           width: 100%;
-                          background-color: black;
+                          background-color: #e8e8e8;
                         "
                       />
                       <span style="font-size: 12px">MAY/28</span>
@@ -945,7 +944,7 @@
                         style="
                           height: 3px;
                           width: 100%;
-                          background-color: black;
+                          background-color: #e8e8e8;
                         "
                       />
                       <span style="font-size: 12px">8</span>
@@ -1061,7 +1060,7 @@
                         style="
                           height: 3px;
                           width: 100%;
-                          background-color: black;
+                          background-color: #e8e8e8;
                         "
                       />
                       <span style="font-size: 12px">MAY/28</span>
@@ -1083,7 +1082,7 @@
                         style="
                           height: 3px;
                           width: 100%;
-                          background-color: black;
+                          background-color: #e8e8e8;
                         "
                       />
                       <span style="font-size: 12px">8</span>
@@ -1103,7 +1102,10 @@
                   </div>
                 </div>
                 <div style="display: grid; gap: 20px; padding: 30px">
-                  <h4 class="style-title" style="color: black">
+                  <h4
+                    class="style-title"
+                    style="color: blackSIMPLE YOUTUBE POST"
+                  >
                     PAPILION MINTER SAVIOR
                   </h4>
                   <p style="font-size: 13px">
@@ -1224,7 +1226,11 @@
                   >
                     <span style="font-size: 18px">2015</span>
                     <hr
-                      style="height: 3px; width: 100%; background-color: black"
+                      style="
+                        height: 3px;
+                        width: 100%;
+                        background-color: #e8e8e8;
+                      "
                     />
                     <span style="font-size: 12px">MAY/28</span>
                   </div>
@@ -1242,7 +1248,11 @@
                   >
                     <i class="fa-solid fa-comment"></i>
                     <hr
-                      style="height: 3px; width: 100%; background-color: black"
+                      style="
+                        height: 3px;
+                        width: 100%;
+                        background-color: #e8e8e8;
+                      "
                     />
                     <span style="font-size: 12px">8</span>
                   </div>
