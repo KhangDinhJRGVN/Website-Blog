@@ -9,96 +9,61 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Raleway:wght@100;300;400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>Blog-Home</title>
+    <link rel="stylesheet" href="./index.css" />
+    <title>Blog</title>
   </head>
   <body>
-    <div style="position: relative">
+    <div class="div-parent-web">
+      <!-- line-color  -->
       <div class="colorful-line"></div>
-      <!-- button-back-to-top -->
-      <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <!-- button go to top -->
+      <button onclick="topFunction()" id="button-ontop" title="Go to top">
         <i class="fa-solid fa-chevron-up"></i>
       </button>
-      <div
-        style="
-          display: flex;
-          text-align: center;
-          justify-content: center;
-          width: 100%;
-          cursor: pointer;
-        "
-      >
+      <!-- Logo-web -->
+      <div class="div-logo-web">
         <img
           alt="Blogstar Responsive Blogger Template"
-          height="164px; "
-          id="Header1_headerimg"
           src="//4.bp.blogspot.com/-cOvaJw2ITNk/VWeD_ZWNx_I/AAAAAAAAFdc/MBNK0ohqOwk/s1600/blogstar-logo11A.png"
-          style="display: block"
-          width="300px; "
+          height="170px"
+          width="20%"
+          style="min-width: 200px"
         />
       </div>
-      <!-- logo-start -->
-      <div
-        style="
-          margin-top: 30px;
-          font-size: 13px;
-          border-style: double;
-          border-left: 0;
-          border-right: 0;
-          position: sticky;
-          border-color: #e7e4e4;
-          top: -1px;
-          background-color: white;
-          display: flex;
-          align-items: center;
-          justify-content: space-around;
-          height: 50px;
-          z-index: 99;
-        "
-      >
-        <!-- 6-item-naviga -->
-        <div style="display: flex; gap: 30px; align-items: center">
-          <p class="Naviga-bar" style="color: tomato">HOME</p>
-          <a href="./about.html" class="Naviga-bar">ABOUT US</a>
-          <!-- dropdown-->
-          <div class="dropdown" style="height: 100%">
-            <p class="Naviga-bar">DROP DOWN +</p>
+      <!-- Menu-bar -->
+      <div class="div-menu-bar">
+        <!-- 6-item-in-menu-bar -->
+        <div class="div-6-item-menu-bar">
+          <p class="item-menu-bar" style="color: tomato">HOME</p>
+          <a class="item-menu-bar" href="../AboutPage/about.html">ABOUT US</a>
+          <!-- dropdown-DROPDOWN -->
+          <div class="dropdown item-menu-bar" style="height: 100%">
+            <p>DROP DOWN +</p>
             <div class="dropdown-content" id="dropdownSubMenu">
+              <!-- item-sub-dropdown-1 -->
               <a href="#">MINIMAL</a>
-              <hr style="width: 100%; height: 0.5px; background-color: black" />
-              <!-- sub-dropdown-->
-              <div class="sub-menu-with-subs dropdown-item">
-                <a href="#">SUB MENU WITH SUBS +</a>
+              <!-- sub-dropdown-DROPDOWN-->
+              <div class="sub-menu" style="position: relative">
+                <a href="#" class="sub-menu-with-subs">SUB MENU WITH SUBS +</a>
+                <!-- item-sub-dropdown-2 -->
                 <div class="sub-dropdown-item" id="subDropdown">
-                  <hr
-                    style="width: 100%; height: 0.5px; background-color: black"
-                  />
                   <a href="#">FEMINIST</a>
-                  <hr
-                    style="width: 100%; height: 0.5px; background-color: black"
-                  />
                   <a href="#">PERSONA</a>
-                  <hr
-                    style="width: 100%; height: 0.5px; background-color: black"
-                  />
                   <a href="#">EXPOSE</a>
                 </div>
               </div>
-              <hr style="width: 100%; height: 0.5px; background-color: black" />
               <a href="#">POWERGAME</a>
-              <hr style="width: 100%; height: 0.5px; background-color: black" />
               <a href="#">FASHION</a>
             </div>
           </div>
-          <p class="Naviga-bar">RESTAURANT</p>
-          <div class="dropdown-menu" style="height: 100%">
-            <p class="Naviga-bar">MEGA MENU +</p>
+          <p class="item-menu-bar">RESTAURANT</p>
+          <!-- dropdown-RESTAURANT  -->
+          <div class="dropdown-menu item-menu-bar" style="height: 100%">
+            <p>MEGA MENU +</p>
             <div class="dropdown-content-mega-menu">
               <div class="style-div-mega-menu">
                 <img
@@ -157,58 +122,41 @@
               </div>
             </div>
           </div>
-          <p class="Naviga-bar">DOWNLOAD</p>
+          <p class="item-menu-bar">DOWNLOAD</p>
         </div>
-        <!-- 9-icon-rigt-nagiga -->
-        <div
-          style="display: flex; gap: 12px; align-items: center; color: black"
-        >
-          <i class="fa-brands fa-facebook Naviga-icon"></i>
-          <i class="fa-brands fa-twitter Naviga-icon"></i>
-          <i class="fa-brands fa-google-plus-g Naviga-icon"></i>
-          <i class="fa-brands fa-linkedin-in Naviga-icon"></i>
-          <i class="fa-brands fa-pinterest Naviga-icon"></i>
-          <i class="fa-brands fa-square-youtube Naviga-icon"></i>
-          <i class="fa-brands fa-square-vimeo Naviga-icon"></i>
-          <i class="fa-brands fa-square-instagram Naviga-icon"></i>
-          <div
-            style="
-              border-left: 1px solid #cfcdcd;
-              height: 13px;
-              width: 30px;
-              align-items: center;
-              justify-content: center;
-              display: flex;
-            "
-          >
+        <!-- 9-icon-in-menu-bar -->
+        <div class="div-9-icon-menu-bar">
+          <i class="fa-brands fa-facebook icon-menu-bar"></i>
+          <i class="fa-brands fa-twitter icon-menu-bar"></i>
+          <i class="fa-brands fa-google-plus-g icon-menu-bar"></i>
+          <i class="fa-brands fa-linkedin-in icon-menu-bar"></i>
+          <i class="fa-brands fa-pinterest icon-menu-bar"></i>
+          <i class="fa-brands fa-square-youtube icon-menu-bar"></i>
+          <i class="fa-brands fa-square-vimeo icon-menu-bar"></i>
+          <i class="fa-brands fa-square-instagram icon-menu-bar"></i>
+          <div class="div-search icon-menu-bar">
             <i
               onclick="searchFuntion('search-funtion-1')"
-              class="fa-solid fa-magnifying-glass Naviga-icon"
+              class="fa-solid fa-magnifying-glass search-icon"
             ></i>
             <input
               class="search-funtion"
               id="search-funtion-1"
-              type="text"
-              style="
-                height: 40px;
-                padding-left: 10px;
-                position: absolute;
-                bottom: -42px;
-                right: 130px;
-                border: 1px solid #e8e8e8;
-                outline: none;
-              "
-              placeholder="Search and hit enter"
+              type="search"
+              value="Search and hit enter"
+              onfocus="clearInputValue(this)"
+              onblur="resetInputValue(this)"
             />
           </div>
         </div>
       </div>
-      <div style="display: flex; padding: 40px 100px; gap: 10px">
-        <!-- left-width-0 -->
-        <div style="display: flex; flex-direction: column; gap: 60px">
-          <div style="display: flex; gap: 30px; flex: 1">
+      <!-- Content header -->
+      <div class="div-parent-content">
+        <!-- Left-Content -->
+        <div class="div-parent-content-left">
+          <div class="left-content-sub-parent">
             <!-- left -->
-            <div style="display: flex; flex-direction: column; gap: 20px">
+            <div class="div-left-content-sub">
               <div class="border-image-home">
                 <div style="position: relative; overflow: hidden">
                   <img
@@ -219,88 +167,21 @@
                     width="100%;"
                     height="400px"
                   />
-                  <p
-                    class="image-name-left"
-                    style="
-                      position: absolute;
-                      top: -34px;
-                      left: 10px;
-                      background-color: tomato;
-                      padding: 5px;
-                      color: white;
-                      transition: all 0.3s;
-                    "
-                  >
-                    khang
-                  </p>
-                  <div
-                    class="image-name-right"
-                    style="
-                      display: flex;
-                      flex-direction: column;
-                      position: absolute;
-                      right: -65px;
-                      top: 10px;
-                      gap: 10px;
-                      transition: all 0.3s;
-                    "
-                  >
-                    <div
-                      style="
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-direction: column;
-                        padding: 8px;
-                        background-color: white;
-                        gap: 4px;
-                        border: 1px solid #cfcdcd;
-                      "
-                    >
+                  <p class="image-name-left">Image 1</p>
+                  <div class="image-name-right">
+                    <div class="item-image-name-right">
                       <span style="font-size: 18px">2015</span>
-                      <hr
-                        style="
-                          height: 3px;
-                          width: 100%;
-                          background-color: black;
-                        "
-                      />
+                      <hr class="style-hr" />
                       <span style="font-size: 12px">MAY/28</span>
                     </div>
-                    <div
-                      style="
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-direction: column;
-                        padding: 8px;
-                        background-color: white;
-                        gap: 7px;
-                        border: 1px solid #cfcdcd;
-                      "
-                    >
+                    <div class="item-image-name-right">
                       <i class="fa-solid fa-comment"></i>
-                      <hr
-                        style="
-                          height: 3px;
-                          width: 100%;
-                          background-color: black;
-                        "
-                      />
+                      <hr class="style-hr" />
                       <span style="font-size: 12px">8</span>
                     </div>
                   </div>
-                  <div
-                    style="
-                      position: absolute;
-                      bottom: 0;
-                      background-color: rgba(245, 245, 245, 0.3);
-                      width: 100%;
-                      padding: 30px;
-                      color: white;
-                    "
-                  >
-                    <p>khang</p>
+                  <div class="div-blur-in-image">
+                    <p>khang 1</p>
                   </div>
                 </div>
                 <div style="display: grid; gap: 20px; padding: 30px">
@@ -312,15 +193,9 @@
                     ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
                     consequat....
                   </p>
-                  <div
-                    style="
-                      display: flex;
-                      justify-content: space-between;
-                      align-items: center;
-                    "
-                  >
+                  <div class="div-read-more">
                     <p class="label-border-readmore">READ MORE</p>
-                    <div style="display: flex; gap: 10px; align-items: center">
+                    <div class="div-menu-share">
                       <div class="menu-share" id="menu-share-1">
                         <i
                           class="fa-brands fa-facebook Naviga-icon border-icon-image-navigation"
@@ -347,16 +222,7 @@
                   </div>
                 </div>
               </div>
-              <div
-                class="border-image-home"
-                style="
-                  display: grid;
-                  gap: 20px;
-                  padding: 30px;
-                  position: relative;
-                  overflow: hidden;
-                "
-              >
+              <div class="border-image-home div-border-image-home">
                 <h4 class="style-title" style="color: black">
                   RIGHT PATH MYSTERY
                 </h4>
@@ -365,15 +231,9 @@
                   elementum viverra pharetra. Nulla facilisis, sapien non
                   pharetra venenat...
                 </p>
-                <div
-                  style="
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                  "
-                >
+                <div class="div-read-more">
                   <p class="label-border-readmore">READ MORE</p>
-                  <div style="display: flex; gap: 10px; align-items: center">
+                  <div class="div-menu-share">
                     <div class="menu-share" id="menu-share-2">
                       <i
                         class="fa-brands fa-facebook Naviga-icon border-icon-image-navigation"
@@ -399,52 +259,15 @@
                   </div>
                 </div>
                 <!-- hover calendar -->
-                <div
-                  class="image-name-right"
-                  style="
-                    display: flex;
-                    flex-direction: column;
-                    position: absolute;
-                    right: -65px;
-                    top: 10px;
-                    gap: 10px;
-                    transition: all 0.3s;
-                  "
-                >
-                  <div
-                    style="
-                      display: flex;
-                      align-items: center;
-                      justify-content: center;
-                      flex-direction: column;
-                      padding: 8px;
-                      background-color: white;
-                      gap: 4px;
-                      border: 1px solid #cfcdcd;
-                    "
-                  >
+                <div class="image-name-right">
+                  <div class="div-calendar">
                     <span style="font-size: 18px">2015</span>
-                    <hr
-                      style="height: 3px; width: 100%; background-color: black"
-                    />
+                    <hr class="style-hr" />
                     <span style="font-size: 12px">MAY/28</span>
                   </div>
-                  <div
-                    style="
-                      display: flex;
-                      align-items: center;
-                      justify-content: center;
-                      flex-direction: column;
-                      padding: 8px;
-                      background-color: white;
-                      gap: 7px;
-                      border: 1px solid #cfcdcd;
-                    "
-                  >
+                  <div class="div-comment">
                     <i class="fa-solid fa-comment"></i>
-                    <hr
-                      style="height: 3px; width: 100%; background-color: black"
-                    />
+                    <hr class="style-hr" />
                     <span style="font-size: 12px">8</span>
                   </div>
                 </div>
@@ -459,88 +282,21 @@
                     width="100%;"
                     height="400px"
                   />
-                  <p
-                    class="image-name-left"
-                    style="
-                      position: absolute;
-                      top: -34px;
-                      left: 10px;
-                      background-color: tomato;
-                      padding: 5px;
-                      color: white;
-                      transition: all 0.3s;
-                    "
-                  >
-                    khang
-                  </p>
-                  <div
-                    class="image-name-right"
-                    style="
-                      display: flex;
-                      flex-direction: column;
-                      position: absolute;
-                      right: -65px;
-                      top: 10px;
-                      gap: 10px;
-                      transition: all 0.3s;
-                    "
-                  >
-                    <div
-                      style="
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-direction: column;
-                        padding: 8px;
-                        background-color: white;
-                        gap: 4px;
-                        border: 1px solid #cfcdcd;
-                      "
-                    >
+                  <p class="image-name-left">Image 2</p>
+                  <div class="image-name-right">
+                    <div class="item-image-name-right">
                       <span style="font-size: 18px">2015</span>
-                      <hr
-                        style="
-                          height: 3px;
-                          width: 100%;
-                          background-color: black;
-                        "
-                      />
+                      <hr class="style-hr" />
                       <span style="font-size: 12px">MAY/28</span>
                     </div>
-                    <div
-                      style="
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-direction: column;
-                        padding: 8px;
-                        background-color: white;
-                        gap: 7px;
-                        border: 1px solid #cfcdcd;
-                      "
-                    >
+                    <div class="item-image-name-right">
                       <i class="fa-solid fa-comment"></i>
-                      <hr
-                        style="
-                          height: 3px;
-                          width: 100%;
-                          background-color: black;
-                        "
-                      />
+                      <hr class="style-hr" />
                       <span style="font-size: 12px">8</span>
                     </div>
                   </div>
-                  <div
-                    style="
-                      position: absolute;
-                      bottom: 0;
-                      background-color: rgba(245, 245, 245, 0.3);
-                      width: 100%;
-                      padding: 30px;
-                      color: white;
-                    "
-                  >
-                    <p>khang</p>
+                  <div class="div-blur-in-image">
+                    <p>khang 2</p>
                   </div>
                 </div>
                 <div style="display: grid; gap: 20px; padding: 30px">
@@ -552,13 +308,7 @@
                     ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
                     consequat....
                   </p>
-                  <div
-                    style="
-                      display: flex;
-                      justify-content: space-between;
-                      align-items: center;
-                    "
-                  >
+                  <div class="div-read-more">
                     <p class="label-border-readmore">READ MORE</p>
                     <div style="display: flex; gap: 10px; align-items: center">
                       <div class="menu-share" id="menu-share-3">
@@ -597,88 +347,21 @@
                     width="100%;"
                     height="400px"
                   />
-                  <p
-                    class="image-name-left"
-                    style="
-                      position: absolute;
-                      top: -34px;
-                      left: 10px;
-                      background-color: tomato;
-                      padding: 5px;
-                      color: white;
-                      transition: all 0.3s;
-                    "
-                  >
-                    khang
-                  </p>
-                  <div
-                    class="image-name-right"
-                    style="
-                      display: flex;
-                      flex-direction: column;
-                      position: absolute;
-                      right: -65px;
-                      top: 10px;
-                      gap: 10px;
-                      transition: all 0.3s;
-                    "
-                  >
-                    <div
-                      style="
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-direction: column;
-                        padding: 8px;
-                        background-color: white;
-                        gap: 4px;
-                        border: 1px solid #cfcdcd;
-                      "
-                    >
+                  <p class="image-name-left">Image 3</p>
+                  <div class="image-name-right">
+                    <div class="div-calendar">
                       <span style="font-size: 18px">2015</span>
-                      <hr
-                        style="
-                          height: 3px;
-                          width: 100%;
-                          background-color: black;
-                        "
-                      />
+                      <hr class="style-hr" />
                       <span style="font-size: 12px">MAY/28</span>
                     </div>
-                    <div
-                      style="
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-direction: column;
-                        padding: 8px;
-                        background-color: white;
-                        gap: 7px;
-                        border: 1px solid #cfcdcd;
-                      "
-                    >
+                    <div class="div-comment">
                       <i class="fa-solid fa-comment"></i>
-                      <hr
-                        style="
-                          height: 3px;
-                          width: 100%;
-                          background-color: black;
-                        "
-                      />
+                      <hr class="style-hr" />
                       <span style="font-size: 12px">8</span>
                     </div>
                   </div>
-                  <div
-                    style="
-                      position: absolute;
-                      bottom: 0;
-                      background-color: rgba(245, 245, 245, 0.3);
-                      width: 100%;
-                      padding: 30px;
-                      color: white;
-                    "
-                  >
-                    <p>khang</p>
+                  <div class="div-blur-in-image">
+                    <p>khang 3</p>
                   </div>
                 </div>
                 <div style="display: grid; gap: 20px; padding: 30px">
@@ -690,13 +373,7 @@
                     ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
                     consequat....
                   </p>
-                  <div
-                    style="
-                      display: flex;
-                      justify-content: space-between;
-                      align-items: center;
-                    "
-                  >
+                  <div class="div-read-more">
                     <p class="label-border-readmore">READ MORE</p>
                     <div style="display: flex; gap: 10px; align-items: center">
                       <div class="menu-share" id="menu-share-4">
@@ -727,7 +404,7 @@
               </div>
             </div>
             <!-- right -->
-            <div style="display: flex; flex-direction: column; gap: 20px">
+            <div class="div-right-content-sub">
               <div class="border-image-home">
                 <div style="position: relative; overflow: hidden">
                   <img
@@ -738,88 +415,21 @@
                     width="100%;"
                     height="400px"
                   />
-                  <p
-                    class="image-name-left"
-                    style="
-                      position: absolute;
-                      top: -34px;
-                      left: 10px;
-                      background-color: tomato;
-                      padding: 5px;
-                      color: white;
-                      transition: all 0.3s;
-                    "
-                  >
-                    khang
-                  </p>
-                  <div
-                    class="image-name-right"
-                    style="
-                      display: flex;
-                      flex-direction: column;
-                      position: absolute;
-                      right: -65px;
-                      top: 10px;
-                      gap: 10px;
-                      transition: all 0.3s;
-                    "
-                  >
-                    <div
-                      style="
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-direction: column;
-                        padding: 8px;
-                        background-color: white;
-                        gap: 4px;
-                        border: 1px solid #cfcdcd;
-                      "
-                    >
+                  <p class="image-name-left">Image 4</p>
+                  <div class="image-name-right">
+                    <div class="item-image-name-right">
                       <span style="font-size: 18px">2015</span>
-                      <hr
-                        style="
-                          height: 3px;
-                          width: 100%;
-                          background-color: black;
-                        "
-                      />
+                      <hr class="style-hr" />
                       <span style="font-size: 12px">MAY/28</span>
                     </div>
-                    <div
-                      style="
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-direction: column;
-                        padding: 8px;
-                        background-color: white;
-                        gap: 7px;
-                        border: 1px solid #cfcdcd;
-                      "
-                    >
+                    <div class="item-image-name-right">
                       <i class="fa-solid fa-comment"></i>
-                      <hr
-                        style="
-                          height: 3px;
-                          width: 100%;
-                          background-color: black;
-                        "
-                      />
+                      <hr class="style-hr" />
                       <span style="font-size: 12px">8</span>
                     </div>
                   </div>
-                  <div
-                    style="
-                      position: absolute;
-                      bottom: 0;
-                      background-color: rgba(245, 245, 245, 0.3);
-                      width: 100%;
-                      padding: 30px;
-                      color: white;
-                    "
-                  >
-                    <p>khang</p>
+                  <div class="div-blur-in-image">
+                    <p>khang 4</p>
                   </div>
                 </div>
                 <div style="display: grid; gap: 20px; padding: 30px">
@@ -831,13 +441,7 @@
                     ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
                     consequat....
                   </p>
-                  <div
-                    style="
-                      display: flex;
-                      justify-content: space-between;
-                      align-items: center;
-                    "
-                  >
+                  <div class="div-read-more">
                     <p class="label-border-readmore">READ MORE</p>
                     <div style="display: flex; gap: 10px; align-items: center">
                       <div class="menu-share" id="menu-share-5">
@@ -876,88 +480,21 @@
                     width="100%;"
                     height="400px"
                   />
-                  <p
-                    class="image-name-left"
-                    style="
-                      position: absolute;
-                      top: -34px;
-                      left: 10px;
-                      background-color: tomato;
-                      padding: 5px;
-                      color: white;
-                      transition: all 0.3s;
-                    "
-                  >
-                    khang
-                  </p>
-                  <div
-                    class="image-name-right"
-                    style="
-                      display: flex;
-                      flex-direction: column;
-                      position: absolute;
-                      right: -65px;
-                      top: 10px;
-                      gap: 10px;
-                      transition: all 0.3s;
-                    "
-                  >
-                    <div
-                      style="
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-direction: column;
-                        padding: 8px;
-                        background-color: white;
-                        gap: 4px;
-                        border: 1px solid #cfcdcd;
-                      "
-                    >
+                  <p class="image-name-left">Image 5</p>
+                  <div class="image-name-right">
+                    <div class="item-image-name-right">
                       <span style="font-size: 18px">2015</span>
-                      <hr
-                        style="
-                          height: 3px;
-                          width: 100%;
-                          background-color: black;
-                        "
-                      />
+                      <hr class="style-hr" />
                       <span style="font-size: 12px">MAY/28</span>
                     </div>
-                    <div
-                      style="
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-direction: column;
-                        padding: 8px;
-                        background-color: white;
-                        gap: 7px;
-                        border: 1px solid #cfcdcd;
-                      "
-                    >
+                    <div class="item-image-name-right">
                       <i class="fa-solid fa-comment"></i>
-                      <hr
-                        style="
-                          height: 3px;
-                          width: 100%;
-                          background-color: black;
-                        "
-                      />
+                      <hr class="style-hr" />
                       <span style="font-size: 12px">8</span>
                     </div>
                   </div>
-                  <div
-                    style="
-                      position: absolute;
-                      bottom: 0;
-                      background-color: rgba(245, 245, 245, 0.3);
-                      width: 100%;
-                      padding: 30px;
-                      color: white;
-                    "
-                  >
-                    <p>khang</p>
+                  <div class="div-blur-in-image">
+                    <p>khang 5</p>
                   </div>
                 </div>
                 <div style="display: grid; gap: 20px; padding: 30px">
@@ -969,13 +506,7 @@
                     ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
                     consequat....
                   </p>
-                  <div
-                    style="
-                      display: flex;
-                      justify-content: space-between;
-                      align-items: center;
-                    "
-                  >
+                  <div class="div-read-more">
                     <p class="label-border-readmore">READ MORE</p>
                     <div style="display: flex; gap: 10px; align-items: center">
                       <div class="menu-share" id="menu-share-6">
@@ -1014,92 +545,28 @@
                     width="100%;"
                     height="400px"
                   />
-                  <p
-                    class="image-name-left"
-                    style="
-                      position: absolute;
-                      top: -34px;
-                      left: 10px;
-                      background-color: tomato;
-                      padding: 5px;
-                      color: white;
-                      transition: all 0.3s;
-                    "
-                  >
-                    khang
-                  </p>
-                  <div
-                    class="image-name-right"
-                    style="
-                      display: flex;
-                      flex-direction: column;
-                      position: absolute;
-                      right: -65px;
-                      top: 10px;
-                      gap: 10px;
-                      transition: all 0.3s;
-                    "
-                  >
-                    <div
-                      style="
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-direction: column;
-                        padding: 8px;
-                        background-color: white;
-                        gap: 4px;
-                        border: 1px solid #cfcdcd;
-                      "
-                    >
+                  <p class="image-name-left">Image 6</p>
+                  <div class="image-name-right">
+                    <div class="item-image-name-right">
                       <span style="font-size: 18px">2015</span>
-                      <hr
-                        style="
-                          height: 3px;
-                          width: 100%;
-                          background-color: black;
-                        "
-                      />
+                      <hr class="style-hr" />
                       <span style="font-size: 12px">MAY/28</span>
                     </div>
-                    <div
-                      style="
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-direction: column;
-                        padding: 8px;
-                        background-color: white;
-                        gap: 7px;
-                        border: 1px solid #cfcdcd;
-                      "
-                    >
+                    <div class="item-image-name-right">
                       <i class="fa-solid fa-comment"></i>
-                      <hr
-                        style="
-                          height: 3px;
-                          width: 100%;
-                          background-color: black;
-                        "
-                      />
+                      <hr class="style-hr" />
                       <span style="font-size: 12px">8</span>
                     </div>
                   </div>
-                  <div
-                    style="
-                      position: absolute;
-                      bottom: 0;
-                      background-color: rgba(245, 245, 245, 0.3);
-                      width: 100%;
-                      padding: 30px;
-                      color: white;
-                    "
-                  >
-                    <p>khang</p>
+                  <div class="div-blur-in-image">
+                    <p>khang 6</p>
                   </div>
                 </div>
                 <div style="display: grid; gap: 20px; padding: 30px">
-                  <h4 class="style-title" style="color: black">
+                  <h4
+                    class="style-title"
+                    style="color: blackSIMPLE YOUTUBE POST"
+                  >
                     PAPILION MINTER SAVIOR
                   </h4>
                   <p style="font-size: 13px">
@@ -1107,13 +574,7 @@
                     ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
                     consequat....
                   </p>
-                  <div
-                    style="
-                      display: flex;
-                      justify-content: space-between;
-                      align-items: center;
-                    "
-                  >
+                  <div class="div-read-more">
                     <p class="label-border-readmore">READ MORE</p>
                     <div style="display: flex; gap: 10px; align-items: center">
                       <div class="menu-share" id="menu-share-7">
@@ -1142,16 +603,7 @@
                   </div>
                 </div>
               </div>
-              <div
-                class="border-image-home"
-                style="
-                  display: grid;
-                  gap: 20px;
-                  padding: 30px;
-                  position: relative;
-                  overflow: hidden;
-                "
-              >
+              <div class="border-image-home div-border-image-home">
                 <h4 class="style-title" style="color: black">
                   SIMPLE YOUTUBE POST
                 </h4>
@@ -1160,13 +612,7 @@
                   elementum viverra pharetra. Nulla facilisis, sapien non
                   pharetra venenati...
                 </p>
-                <div
-                  style="
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                  "
-                >
+                <div class="div-read-more">
                   <p class="label-border-readmore">READ MORE</p>
                   <div style="display: flex; gap: 10px; align-items: center">
                     <div class="menu-share" id="menu-share-8">
@@ -1194,71 +640,27 @@
                   </div>
                 </div>
                 <!-- hover calendar -->
-                <div
-                  class="image-name-right"
-                  style="
-                    display: flex;
-                    flex-direction: column;
-                    position: absolute;
-                    right: -65px;
-                    top: 10px;
-                    gap: 10px;
-                    transition: all 0.3s;
-                  "
-                >
-                  <div
-                    style="
-                      display: flex;
-                      align-items: center;
-                      justify-content: center;
-                      flex-direction: column;
-                      padding: 8px;
-                      background-color: white;
-                      gap: 4px;
-                      border: 1px solid #cfcdcd;
-                    "
-                  >
+                <div class="image-name-right">
+                  <div class="item-image-name-right">
                     <span style="font-size: 18px">2015</span>
-                    <hr
-                      style="height: 3px; width: 100%; background-color: black"
-                    />
+                    <hr class="style-hr" />
                     <span style="font-size: 12px">MAY/28</span>
                   </div>
-                  <div
-                    style="
-                      display: flex;
-                      align-items: center;
-                      justify-content: center;
-                      flex-direction: column;
-                      padding: 8px;
-                      background-color: white;
-                      gap: 7px;
-                      border: 1px solid #cfcdcd;
-                    "
-                  >
+                  <div class="item-image-name-right">
                     <i class="fa-solid fa-comment"></i>
-                    <hr
-                      style="height: 3px; width: 100%; background-color: black"
-                    />
+                    <hr class="style-hr" />
                     <span style="font-size: 12px">8</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div
-            style="
-              display: flex;
-              gap: 20px;
-              justify-content: center;
-              margin-bottom: 40px;
-            "
-          >
-            <a href="./home-2.html" class="border-icon-page">
+          <div class="div-page">
+            <a href="./homepage2.html" class="border-icon-page">
               <i class="fa-solid fa-chevron-left"></i>
             </a>
-            <a href="./index.html" class="border-icon-page">1</a>
-            <a href="./home-2.html" class="border-icon-page">2</a>
+            <a href="../index.html" class="border-icon-page">1</a>
+            <a href="homepage2.html" class="border-icon-page">2</a>
             <p
               style="border-color: black; color: black"
               class="border-icon-page"
@@ -1267,47 +669,20 @@
             </p>
           </div>
         </div>
-        <!-- right-width-23% -->
-        <div
-          style="
-            margin-left: 50px;
-            display: flex;
-            gap: 40px;
-            flex-direction: column;
-            width: 23%;
-          "
-        >
-          <div
-            style="
-              display: flex;
-              border-style: double;
-              border-color: #e7e4e4;
-              height: 45px;
-              align-items: center;
-              justify-content: space-between;
-              padding: 20px;
-            "
-          >
+        <!-- Right -->
+        <div class="div-parent-content-right">
+          <!-- about-me-and-add -->
+          <div class="right-content-sub-item">
             <span style="font-size: 12px">ABOUT ME</span>
             <i class="fa-solid fa-plus" style="font-size: 10px"></i>
           </div>
-          <!-- about-me-and-add -->
           <span
             >John Smith, tempor duis single-origin coffee ea next level ethnic
             fingerstache fanny pack nostrud photo booth anim velta.</span
           >
+          <!-- popular post-and-add -->
           <div style="display: flex; flex-direction: column; gap: 20px">
-            <div
-              style="
-                display: flex;
-                border-style: double;
-                border-color: #e7e4e4;
-                height: 45px;
-                align-items: center;
-                justify-content: space-between;
-                padding: 20px;
-              "
-            >
+            <div class="right-content-sub-item">
               <span style="font-size: 12px">POPULAR POSTS</span>
               <i class="fa-solid fa-plus" style="font-size: 10px"></i>
             </div>
@@ -1357,37 +732,17 @@
             </span>
             <!-- 4-image-and-title -->
           </div>
-          <!-- popular post-and-add -->
-          <div
-            style="
-              display: flex;
-              border-style: double;
-              border-color: #e7e4e4;
-              height: 45px;
-              align-items: center;
-              justify-content: space-between;
-              padding: 20px;
-            "
-          >
+          <!-- ads-and-add -->
+          <div class="right-content-sub-item">
             <span style="font-size: 12px">ADS</span>
             <i class="fa-solid fa-plus" style="font-size: 10px"></i>
           </div>
-          <!-- ads-and-add -->
-          <div
-            style="
-              display: flex;
-              border-style: double;
-              border-color: #e7e4e4;
-              height: 45px;
-              align-items: center;
-              justify-content: space-between;
-              padding: 20px;
-            "
-          >
+          <!-- label-cloud-and-add -->
+          <div class="right-content-sub-item">
             <span style="font-size: 12px">LABELS CLOUD </span>
             <i class="fa-solid fa-plus" style="font-size: 10px"></i>
           </div>
-          <!-- label-cloud-and-add -->
+          <!-- 7-label-border -->
           <div style="display: flex; flex-wrap: wrap; gap: 10px">
             <p class="label-border-right">BREEK</p>
             <p class="label-border-right">FOOD</p>
@@ -1397,22 +752,12 @@
             <p class="label-border-right">VIDEO</p>
             <p class="label-border-right">VIMEO</p>
           </div>
-          <!-- 7-label-border -->
-          <div
-            style="
-              display: flex;
-              border-style: double;
-              border-color: #e7e4e4;
-              height: 45px;
-              align-items: center;
-              justify-content: space-between;
-              padding: 20px;
-            "
-          >
+          <!-- label-list-numbered-and-add -->
+          <div class="right-content-sub-item">
             <span style="font-size: 12px">LABELS LIST NUMBERED</span>
             <i class="fa-solid fa-plus" style="font-size: 10px"></i>
           </div>
-          <!-- label-list-numbered-and-add -->
+          <!-- 7-label-border-bottom -->
           <div style="display: flex; flex-direction: column; gap: 10px">
             <p class="label-border-bottom">BREEK</p>
             <p class="label-border-bottom">FOOD</p>
@@ -1422,22 +767,11 @@
             <p class="label-border-bottom">VIDEO</p>
             <p class="label-border-bottom">VIMEO</p>
           </div>
-          <!-- 7-label-border-bottom -->
-          <div
-            style="
-              display: flex;
-              border-style: double;
-              border-color: #e7e4e4;
-              height: 45px;
-              align-items: center;
-              justify-content: space-between;
-              padding: 20px;
-            "
-          >
+          <!-- video-of-the-day-and-add -->
+          <div class="right-content-sub-item">
             <span style="font-size: 12px">VIDEO OF THE DAY</span>
             <i class="fa-solid fa-plus" style="font-size: 10px"></i>
           </div>
-          <!-- video-of-the-day-and-add -->
           <iframe
             width="250"
             src="https://www.youtube.com/embed/86xXXRgqBuc?si=3nxGhHrk4AyfjrEu"
@@ -1448,37 +782,14 @@
           ></iframe>
         </div>
       </div>
-      <div
-        style="
-          display: flex;
-          height: 500px;
-          background-color: #2e2e2e;
-          width: 100%;
-        "
-      >
+      <!-- Content footer -->
+      <div class="div-parent-content-footer">
         <div class="grid-container">
           <div class="grid-item">
-            <div
-              style="
-                display: flex;
-                border-style: double;
-                border-color: #e7e4e4;
-                height: 45px;
-                padding: 20px;
-                align-items: center;
-                justify-content: center;
-              "
-            >
+            <div class="footer-content-sub-item">
               <span style="font-size: 12px">POPULAR POSTS </span>
             </div>
-            <div
-              style="
-                display: flex;
-                flex-direction: column;
-                gap: 30px;
-                margin-top: 20px;
-              "
-            >
+            <div class="div-3-image-footer">
               <!-- 3-image-footer -->
               <span style="display: flex; gap: 20px">
                 <img
@@ -1516,17 +827,7 @@
             </div>
           </div>
           <div class="grid-item">
-            <div
-              style="
-                display: flex;
-                border-style: double;
-                border-color: #e7e4e4;
-                height: 45px;
-                align-items: center;
-                justify-content: center;
-                padding: 20px;
-              "
-            >
+            <div class="footer-content-sub-item">
               <span style="font-size: 12px">LABELS</span>
             </div>
             <div
@@ -1542,17 +843,7 @@
             </div>
           </div>
           <div class="grid-item">
-            <div
-              style="
-                display: flex;
-                border-style: double;
-                border-color: #e7e4e4;
-                height: 45px;
-                align-items: center;
-                justify-content: center;
-                padding: 20px;
-              "
-            >
+            <div class="footer-content-sub-item">
               <span style="font-size: 12px">CONTACT FORM </span>
             </div>
             <!-- text-input -->
@@ -1562,62 +853,25 @@
               >
                 <input
                   type="text"
-                  style="
-                    height: 40px;
-                    margin-bottom: 15px;
-                    background-color: #0f0f0f;
-                    padding-left: 10px;
-                    border: 0;
-                    color: white;
-                  "
                   required
                   placeholder="Name"
+                  class="style-text-input"
                 />
                 <input
                   type="text"
-                  style="
-                    height: 40px;
-                    margin-bottom: 15px;
-                    background-color: #0f0f0f;
-                    padding-left: 10px;
-                    border: 0;
-                    color: white;
-                  "
                   required
                   placeholder="Email"
+                  class="style-text-input"
                 />
                 <textarea
                   rows="5"
-                  style="
-                    margin-bottom: 15px;
-                    background-color: #0f0f0f;
-                    padding: 10px;
-                    border: 0;
-                    font-size: 15px;
-                    resize: none;
-                    color: white;
-                  "
                   required
                   placeholder="Message"
+                  class="style-text-area"
                 ></textarea>
               </div>
               <div style="display: flex; justify-content: end">
-                <button
-                  class="hover-button-send"
-                  type="submit"
-                  style="
-                    background-color: black;
-                    display: flex;
-                    width: 70px;
-                    height: 40px;
-                    color: white;
-                    cursor: pointer;
-                    align-items: center;
-                    justify-content: center;
-                    border-radius: 20px;
-                    border: 0;
-                  "
-                >
+                <button class="style-button-send" type="submit">
                   <p style="font-size: 12px">SEND</p>
                 </button>
               </div>
@@ -1625,19 +879,9 @@
           </div>
         </div>
       </div>
-      <!-- copy-right -->
+      <!-- Copy-right -->
       <div style="width: 100%; height: 1px; background-color: #7b7b7b"></div>
-      <div
-        style="
-          display: flex;
-          height: 60px;
-          align-items: center;
-          justify-content: space-between;
-          background-color: #2e2e2e;
-          font-size: 13px;
-          padding: 0 100px 0 70px;
-        "
-      >
+      <div class="div-copyright-footer">
         <span style="display: flex; gap: 5px">
           <p>COPYRIGHT © 2015</p>
           <p class="hover-bottom-popular-post" style="color: #f04545">
@@ -1652,6 +896,6 @@
         </span>
       </div>
     </div>
-    <script src="./javascript.js"></script>
+    <script src="./home.js"></script>
   </body>
 </html>

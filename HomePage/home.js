@@ -1,7 +1,4 @@
-// Function-Back-onTop
-
-let mybutton = document.getElementById("myBtn");
-let myNavigar = document.querySelectorAll(".Naviga-bar");
+let mybutton = document.getElementById("button-ontop");
 let canScroll = true;
 
 window.onscroll = function () {
@@ -22,53 +19,51 @@ function scrollFunction() {
 }
 
 function topFunction() {
-  canScroll = false; // Tạm dừng cuộn khi nhấp vào nút cuộn lên
+  canScroll = false;
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 
-  // Cho phép cuộn sau 1 khoảng thời gian nhất định (ví dụ: 1 giây)
   setTimeout(function () {
     canScroll = true;
-  }, 800); // Đặt thời gian đợi ở đây, ví dụ 1000ms = 1 giây
+    mybutton.style.opacity = 0; // Ẩn nút sau khi đã cuộn lên đầu trang
+  }, 700);
 }
 
-// Ngăn chặn sự kiện cuộn trang khi biến canScroll = false
-window.addEventListener(
-  "wheel",
-  function (e) {
-    if (!canScroll) {
-      e.preventDefault();
-      e.stopPropagation();
-      return false;
-    }
-  },
-  { passive: false }
-);
-
 ////////////////Menu-share//////
-
 function menuShare(menuId) {
   var x = document.getElementById(menuId);
   x.classList.toggle("active");
 }
 
-///////////Search/////////
+/////////// Search /////////
 function searchFuntion(searchID) {
-  var x = document.getElementById(searchID);
-  x.classList.toggle("active");
+  var input = document.getElementById(searchID);
+  var searchIcon = document.querySelector(".search-icon");
+  const activeSearch = document.querySelector(`.search-funtion.active`);
+
+  input.classList.toggle("active");
+  searchIcon.style.color = "red";
+
+  if (activeSearch) {
+    searchIcon.style.color = "black";
+  }
 }
+
 document.addEventListener("click", function (event) {
   var searchElement = document.getElementById("search-funtion-1");
-  var searchIcon = document.querySelector(".fa-magnifying-glass");
+  var searchIcon = document.querySelector(".search-icon");
+
   // Kiểm tra xem người dùng có nhấp vào phần tử tìm kiếm hay biểu tượng tìm kiếm không
   if (
     !searchElement.contains(event.target) &&
     !searchIcon.contains(event.target)
   ) {
+    searchIcon.style.color = "black";
     searchElement.classList.remove("active");
   }
 });
-////////////////////////////////Focus-clear-value-search////////////////////////////////
+
+//////////////////////////////// Focus-clear-value-search ////////////////////////////////
 function clearInputValue(element) {
   if (element.value === "Search and hit enter") {
     element.value = "";

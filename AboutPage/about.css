@@ -1,0 +1,68 @@
+.div-parent-content-page {
+  display: flex;
+  padding: 40px 100px;
+  gap: 10px;
+}
+.div-content-left {
+  border: 1px solid #cfcdcd;
+  padding: 25px;
+  height: fit-content;
+}
+.div-social-left {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  justify-content: end;
+  font-size: 14px;
+  margin-top: 30px;
+  color: black;
+}
+.div-comment-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 70px;
+  padding: 30px;
+}
+.div-center {
+  width: 5%;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  color: #363535;
+}
+.div-calendar-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 8px;
+  gap: 4px;
+  border: 1px solid #cfcdcd;
+}
+.div-comment-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 8px;
+  gap: 7px;
+  border: 1px solid #cfcdcd;
+}
+.div-content-right {
+  margin-left: 50px;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  width: 23%;
+}
+.border-icon-about {
+  height: 30px;
+  width: 30px;
+  border: solid 1px #cfcdcd;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+}
