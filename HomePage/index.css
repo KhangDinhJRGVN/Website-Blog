@@ -277,6 +277,7 @@ body {
   display: flex;
   padding: 40px 100px;
   gap: 10px;
+  overflow: hidden;
 }
 .div-parent-content-left {
   display: flex;
@@ -557,4 +558,5 @@ body {
   background-color: #2e2e2e;
   font-size: 13px;
   padding: 0 100px 0 70px;
+  overflow: hidden;
 }

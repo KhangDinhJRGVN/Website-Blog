@@ -29,13 +29,13 @@ function topFunction() {
   }, 700);
 }
 
-////////////////Menu-share//////
+// Menu-share
 function menuShare(menuId) {
   var x = document.getElementById(menuId);
   x.classList.toggle("active");
 }
 
-/////////// Search /////////
+// Search
 function searchFuntion(searchID) {
   var input = document.getElementById(searchID);
   var searchIcon = document.querySelector(".search-icon");
@@ -63,7 +63,7 @@ document.addEventListener("click", function (event) {
   }
 });
 
-//////////////////////////////// Focus-clear-value-search ////////////////////////////////
+//Focus-clear-value-search
 function clearInputValue(element) {
   if (element.value === "Search and hit enter") {
     element.value = "";
@@ -72,5 +72,14 @@ function clearInputValue(element) {
 function resetInputValue(element) {
   if (element.value === "") {
     element.value = "Search and hit enter";
+  }
+}
+// Function-close-open-menu-bar-mobile
+function toggleMenuBar() {
+  var menuBar = document.querySelector(".div-menu-bar-mobile-parent");
+  if (!menuBar.classList.contains("close-menu-mobile")) {
+    menuBar.classList.add("close-menu-mobile");
+  } else {
+    menuBar.classList.remove("close-menu-mobile");
   }
 }

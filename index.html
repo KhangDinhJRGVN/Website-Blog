@@ -19,11 +19,16 @@
   </head>
   <body>
     <div class="div-parent-web">
-      <!-- 9-icon-in-menu-bar -->
+      <!-- 9-icon-in-menu-bar mobile-->
       <div class="div-9-icon-menu-bar-mobile">
-        <div style="display: flex; margin-right: 40px">
-          <i class="fa-solid fa-bars" style="font-size: 25px"></i>
+        <div style="display: flex; margin-right: 40px; flex-direction: column">
+          <i
+            class="fa-solid fa-bars"
+            style="font-size: 25px"
+            onclick="toggleMenuBar()"
+          ></i>
         </div>
+        <!-- Socials -->
         <i class="fa-brands fa-facebook icon-menu-bar"></i>
         <i class="fa-brands fa-twitter icon-menu-bar"></i>
         <i class="fa-brands fa-google-plus-g icon-menu-bar"></i>
@@ -32,6 +37,7 @@
         <i class="fa-brands fa-square-youtube icon-menu-bar"></i>
         <i class="fa-brands fa-square-vimeo icon-menu-bar"></i>
         <i class="fa-brands fa-square-instagram icon-menu-bar"></i>
+
         <!-- <div class="div-search icon-menu-bar">
           <i
             onclick="searchFuntion('search-funtion-1')"
@@ -46,6 +52,15 @@
             onblur="resetInputValue(this)"
           />
         </div> -->
+        <!-- Toogle Menu Mobile -->
+        <div class="div-menu-bar-mobile-parent close-menu-mobile">
+          <p class="div-item-menu-bar-mobile">HOME</p>
+          <p class="div-item-menu-bar-mobile">ABOUT US</p>
+          <p class="div-item-menu-bar-mobile">DROP DOWN</p>
+          <p class="div-item-menu-bar-mobile">RESTAURANT</p>
+          <p class="div-item-menu-bar-mobile">MEGA MENU</p>
+          <p class="div-item-menu-bar-mobile">DOWNLOAD</p>
+        </div>
       </div>
       <!-- line-color  -->
       <div class="colorful-line"></div>
