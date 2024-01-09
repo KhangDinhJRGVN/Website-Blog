@@ -35,7 +35,7 @@ function menuShare(menuId) {
   x.classList.toggle("active");
 }
 
-// Search
+// Search-web
 function searchFuntion(searchID) {
   var input = document.getElementById(searchID);
   var searchIcon = document.querySelector(".search-icon");
@@ -48,7 +48,6 @@ function searchFuntion(searchID) {
     searchIcon.style.color = "black";
   }
 }
-
 document.addEventListener("click", function (event) {
   var searchElement = document.getElementById("search-funtion-1");
   var searchIcon = document.querySelector(".search-icon");
@@ -62,7 +61,33 @@ document.addEventListener("click", function (event) {
     searchElement.classList.remove("active");
   }
 });
+// Search-mobile
+function searchFuntionMobile(searchID) {
+  var input = document.getElementById(searchID);
+  var searchIcon = document.querySelector(".search-icon-mobile");
+  const activeSearch = document.querySelector(`.search-funtion-mobile.active`);
 
+  input.classList.toggle("active");
+  searchIcon.style.color = "red";
+
+  if (activeSearch) {
+    searchIcon.style.color = "black";
+  }
+}
+
+document.addEventListener("click", function (event) {
+  var searchElement = document.getElementById("search-funtion-2");
+  var searchIcon = document.querySelector(".search-icon-mobile");
+
+  // Kiểm tra xem người dùng có nhấp vào phần tử tìm kiếm hay biểu tượng tìm kiếm không
+  if (
+    !searchElement.contains(event.target) &&
+    !searchIcon.contains(event.target)
+  ) {
+    searchIcon.style.color = "black";
+    searchElement.classList.remove("active");
+  }
+});
 //Focus-clear-value-search
 function clearInputValue(element) {
   if (element.value === "Search and hit enter") {

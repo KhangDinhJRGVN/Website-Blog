@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   body {
     font-size: 14px;
   }
@@ -16,10 +16,9 @@
 
   .div-9-icon-menu-bar-mobile {
     display: flex;
-    gap: 12px;
     color: black;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     padding: 10px;
     border-color: #e7e4e4;
@@ -52,6 +51,62 @@
     padding: 10px 20px;
   }
   .close-menu-mobile {
-    left: -3000px;
+    left: -300px;
+  }
+  .search-funtion-mobile {
+    display: flex;
+    gap: 5px;
+    opacity: 0;
+    transition: all 0.3s;
+    color: #888;
+    height: 40px;
+    padding-left: 10px;
+    position: absolute;
+    bottom: -42px;
+    right: 50px;
+    border: 1px solid #e8e8e8;
+    outline: none;
+  }
+  .search-funtion-mobile.active {
+    opacity: 1;
+  }
+  .div-parent-content {
+    overflow: hidden;
+    padding: 15px;
+    display: block;
+  }
+  .style-image-content {
+    display: block;
+    width: 100%;
+    height: 300px;
+  }
+  .left-content-sub-parent {
+    display: block;
+    gap: 0;
+  }
+  .div-parent-content-right {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    margin: 0;
+  }
+  .grid-container {
+    display: block;
+    grid-template-columns: 31% 31% 31%;
+    grid-template-rows: 100% 100%;
+    width: 100%;
+    padding: 30px;
+    height: 100%;
+  }
+  .div-copyright-footer {
+    display: flex;
+    background-color: #2e2e2e;
+    font-size: 12px;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    height: 100%;
   }
 }
