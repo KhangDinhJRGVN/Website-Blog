@@ -53,9 +53,41 @@
         </div>
         <!-- Toogle Menu Mobile -->
         <div class="div-menu-bar-mobile-parent close-menu-mobile">
-          <p class="div-item-menu-bar-mobile">HOME</p>
-          <p class="div-item-menu-bar-mobile">ABOUT US</p>
-          <p class="div-item-menu-bar-mobile">DROP DOWN</p>
+          <p class="div-item-menu-bar-mobile" style="color: tomato">HOME</p>
+          <a class="div-item-menu-bar-mobile" href="../AboutPage/about.html"
+            >ABOUT US</a
+          >
+          <!-- Dropdown -->
+          <div
+            class="div-item-menu-bar-mobile div-dropdown-icon dropdown-trigger"
+          >
+            <p>DROP DOWN</p>
+            <i class="fa-solid fa-chevron-right" style="color: black"></i>
+          </div>
+          <div class="dropdown-content-mobile-dropdown">
+            <p onclick="hideDropdown()" class="div-item-menu-bar-mobile">
+              BACK
+            </p>
+            <p class="div-item-menu-bar-mobile">MINIMAL</p>
+            <div
+              class="div-item-menu-bar-mobile div-dropdown-icon dropdown-trigger-sub"
+            >
+              <p>SUB MENU WITH SUBS +</p>
+              <i class="fa-solid fa-chevron-right" style="color: black"></i>
+            </div>
+            <p class="div-item-menu-bar-mobile">POWERGAME</p>
+            <p class="div-item-menu-bar-mobile">FASHION</p>
+          </div>
+          <!-- SUB-->
+          <div class="dropdown-content-mobile-sub">
+            <p onclick="hideDropdownSub()" class="div-item-menu-bar-mobile">
+              BACK
+            </p>
+            <p class="div-item-menu-bar-mobile">FEMINIST</p>
+            <p class="div-item-menu-bar-mobile">PERSONA</p>
+            <p class="div-item-menu-bar-mobile">EXPOSE</p>
+          </div>
+          <!--  -->
           <p class="div-item-menu-bar-mobile">RESTAURANT</p>
           <p class="div-item-menu-bar-mobile">MEGA MENU</p>
           <p class="div-item-menu-bar-mobile">DOWNLOAD</p>
@@ -775,7 +807,7 @@
             <i class="fa-solid fa-plus" style="font-size: 10px"></i>
           </div>
           <!-- 7-label-border -->
-          <div style="display: flex; flex-wrap: wrap; gap: 10px">
+          <div style="display: flex; flex-wrap: wrap; gap: 4px">
             <p class="label-border-right">BREEK</p>
             <p class="label-border-right">FOOD</p>
             <p class="label-border-right">SLIDER</p>
@@ -864,7 +896,7 @@
               <span style="font-size: 12px">LABELS</span>
             </div>
             <div
-              style="display: flex; flex-wrap: wrap; gap: 5px; margin-top: 20px"
+              style="display: flex; flex-wrap: wrap; gap: 4px; margin-top: 20px"
             >
               <p class="label-border-footer">BREEK</p>
               <p class="label-border-footer">FOOD</p>
@@ -916,7 +948,7 @@
       <div style="width: 100%; height: 1px; background-color: #7b7b7b"></div>
       <div class="div-copyright-footer">
         <span style="display: flex; gap: 5px">
-          <p>COPYRIGHT © 2015</p>
+          <p style="min-width: fit-content">COPYRIGHT © 2015</p>
           <p class="hover-bottom-popular-post" style="color: #f04545">
             BLOGSTAR RESPONSIVE BLOGGER TEMPLATE
           </p>

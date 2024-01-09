@@ -84,7 +84,7 @@ body {
 }
 .div-6-item-menu-bar {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   align-items: center;
 }
 .div-9-icon-menu-bar-mobile {
@@ -297,6 +297,7 @@ body {
   gap: 40px;
   flex-direction: column;
   width: 23%;
+  height: fit-content;
 }
 .left-content-sub-parent {
   display: flex;
@@ -472,8 +473,8 @@ body {
 .label-border-right {
   border-style: double;
   border-color: #e7e4e4;
-  font-size: 11px;
-  padding: 7px;
+  font-size: 10px;
+  padding: 5px;
   cursor: pointer;
 }
 .label-border-right:hover {
