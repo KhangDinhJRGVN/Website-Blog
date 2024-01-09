@@ -62,7 +62,7 @@
     color: tomato !important;
   }
   .close-menu-mobile {
-    left: -350px;
+    left: -450px;
   }
   .dropdown-content-mobile-dropdown {
     left: 0px;
@@ -75,7 +75,7 @@
   }
 
   .dropdown-content-mobile-dropdown.show-dropdown {
-    left: -350px;
+    left: -450px;
   }
   .div-dropdown-icon {
     display: flex;
