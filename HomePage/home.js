@@ -112,6 +112,18 @@ function toggleMenuBar() {
     dropdownsub.style.display = "none";
   }
 }
+
+const content = document.querySelector(".div-parent-content");
+
+content.addEventListener("click", function () {
+  var menuBar = document.querySelector(".div-menu-bar-mobile-parent");
+  if (!menuBar.classList.contains("close-menu-mobile")) {
+    menuBar.classList.add("close-menu-mobile");
+  } else {
+    menuBar.classList.remove("close-menu-mobile");
+  }
+});
+
 // Dropdown-content-mobile
 document.addEventListener("DOMContentLoaded", function () {
   var dropdownTrigger = document.querySelector(".dropdown-trigger");

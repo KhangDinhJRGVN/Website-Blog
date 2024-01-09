@@ -6,9 +6,11 @@
     display: none;
   }
   .div-logo-web {
-    width: 200px;
     height: 150px;
     cursor: pointer;
+  }
+  .div-logo-web img {
+    width: 200px;
   }
   .div-menu-bar {
     display: none;
@@ -36,7 +38,7 @@
     position: absolute;
     top: 45px;
     background-color: #f7f9f9;
-    width: 300px;
+    width: 450px;
     left: 0px;
     height: 100vh;
     z-index: 999;
@@ -195,5 +197,8 @@
   .left-content-sub-parent {
     display: block;
     gap: 0;
+  }
+  .div-menu-bar-mobile-parent {
+    width: 300px;
   }
 }
