@@ -104,27 +104,27 @@ function toggleMenuBar() {
   var menuBar = document.querySelector(".div-menu-bar-mobile-parent");
   var dropdown = document.querySelector(".dropdown-content-mobile-dropdown");
   var dropdownsub = document.querySelector(".dropdown-content-mobile-sub");
+  var dropdownmegamenu = document.querySelector(
+    ".dropdown-content-mobile-megamenu"
+  );
   if (!menuBar.classList.contains("close-menu-mobile")) {
     menuBar.classList.add("close-menu-mobile");
   } else {
     menuBar.classList.remove("close-menu-mobile");
     dropdown.style.display = "none";
     dropdownsub.style.display = "none";
+    dropdownmegamenu.style.display = "none";
   }
 }
-
+// Click ra ngoài thì đóng menu bar mobile
 const content = document.querySelector(".div-parent-content");
 
 content.addEventListener("click", function () {
   var menuBar = document.querySelector(".div-menu-bar-mobile-parent");
-  if (!menuBar.classList.contains("close-menu-mobile")) {
-    menuBar.classList.add("close-menu-mobile");
-  } else {
-    menuBar.classList.remove("close-menu-mobile");
-  }
+  menuBar.classList.add("close-menu-mobile");
 });
 
-// Dropdown-content-mobile
+// Dropdown-content-mobile-dropdown
 document.addEventListener("DOMContentLoaded", function () {
   var dropdownTrigger = document.querySelector(".dropdown-trigger");
   var dropdownContent = document.querySelector(
@@ -174,31 +174,29 @@ function hideDropdownSub() {
   dropdown.style.display = "none";
   menuParent.classList.add("div-menu-bar-mobile-dropdown");
 }
-////////////////
-var menuBar = document.querySelector(".div-menu-bar-mobile-parent");
-var menuIsOpen = false;
+//Dropdown-menu-mega
+document.addEventListener("DOMContentLoaded", function () {
+  var dropdownTrigger = document.querySelector(".dropdown-trigger-megamenu");
+  var dropdownContent = document.querySelector(
+    ".dropdown-content-mobile-megamenu"
+  );
 
-// Xử lý sự kiện khi click vào phần tử menu để mở hoặc đóng menu
-menuBar.addEventListener("click", function (event) {
-  if (event.target === menuBar) {
-    menuIsOpen = !menuIsOpen;
-    if (menuIsOpen) {
-      menuBar.classList.remove("close-menu-mobile");
+  dropdownTrigger.addEventListener("click", function () {
+    // Kiểm tra và thiết lập trạng thái hiển thị của dropdown content
+    if (
+      dropdownContent.style.display === "" ||
+      dropdownContent.style.display === "none"
+    ) {
+      dropdownContent.style.display = "block";
     } else {
-      menuBar.classList.add("close-menu-mobile");
+      dropdownContent.style.display = "none";
     }
-  }
+  });
 });
-
-// Xử lý sự kiện khi click ra ngoài menu để đóng menu
-document.addEventListener("click", function (event) {
-  if (!menuBar.contains(event.target) && menuIsOpen) {
-    menuBar.classList.add("close-menu-mobile");
-    menuIsOpen = false;
-    // Ẩn dropdown và dropdownsub nếu cần thiết
-    var dropdown = document.querySelector(".dropdown-content-mobile-dropdown");
-    var dropdownsub = document.querySelector(".dropdown-content-mobile-sub");
-    dropdown.style.display = "none";
-    dropdownsub.style.display = "none";
-  }
-});
+//Function-back-menu-mega
+function hideDropdownMegamenu() {
+  var dropdown = document.querySelector(".dropdown-content-mobile-megamenu");
+  var menuParent = document.querySelector(".div-menu-bar-mobile-parent");
+  dropdown.style.display = "none";
+  menuParent.classList.add("div-menu-bar-mobile-parent");
+}
