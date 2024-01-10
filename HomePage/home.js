@@ -200,3 +200,33 @@ function hideDropdownMegamenu() {
   dropdown.style.display = "none";
   menuParent.classList.add("div-menu-bar-mobile-parent");
 }
+/////Block-Scroll-menu-bar
+// Lấy phần tử .div-menu-bar-mobile-parent
+const menuBar = document.querySelector(".div-menu-bar-mobile-parent");
+
+// Ngăn chặn cuộn trang khi hover vào phần tử
+menuBar.addEventListener("mouseenter", () => {
+  // Lưu trạng thái cuộn trang
+  const scrollY = window.scrollY;
+
+  // Vô hiệu hóa cuộn trang
+  document.body.style.overflow = "hidden";
+
+  // Giữ nguyên vị trí trượt của trang
+  document.body.style.position = "fixed";
+  document.body.style.top = `-${scrollY}px`;
+});
+
+// Kích hoạt lại cuộn trang khi rời khỏi phần tử
+menuBar.addEventListener("mouseleave", () => {
+  // Lấy trạng thái trượt của trang trước đó
+  const scrollY = parseInt(document.body.style.top || "0", 10);
+
+  // Kích hoạt lại cuộn trang
+  document.body.style.overflow = "";
+  document.body.style.position = "";
+  document.body.style.top = "";
+
+  // Đặt lại trạng thái trượt của trang
+  window.scrollTo(0, scrollY);
+});
