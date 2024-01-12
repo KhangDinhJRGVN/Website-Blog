@@ -202,12 +202,9 @@ function hideDropdownMegamenu() {
 }
 
 /////Block-Scroll-menu-bar
-const menuBar = document.querySelector(".div-menu-bar-mobile-parent");
-menuBar.addEventListener("mouseenter", () => {
-  // Ngăn chặn cuộn trang khi hover vào phần tử
-  document.body.style.overflow = "hidden";
-});
-menuBar.addEventListener("mouseleave", () => {
-  // Kích hoạt lại cuộn trang khi rời khỏi phần tử
-  document.body.style.overflow = "";
+// const megaMenu = document.querySelector(".dropdown-content-mobile-megamenu");
+var hambuger = document.querySelector(".hambuger");
+
+hambuger.addEventListener("click", () => {
+  document.body.classList.toggle("no-scrollbar");
 });

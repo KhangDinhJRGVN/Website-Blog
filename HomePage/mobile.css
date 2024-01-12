@@ -2,6 +2,9 @@
   body {
     font-size: 14px;
   }
+  .no-scrollbar {
+    overflow: hidden;
+  }
   .colorful-line {
     display: none;
   }
