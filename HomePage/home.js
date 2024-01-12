@@ -117,12 +117,21 @@ function toggleMenuBar() {
   }
 }
 // Click ra ngoài thì đóng menu bar mobile
-const content = document.querySelector(".div-parent-content");
+const body = document.querySelector(".div-parent-content");
+const footer1 = document.querySelector(".div-parent-content-footer");
+const footer2 = document.querySelector(".div-copyright-footer");
 
-content.addEventListener("click", function () {
-  var menuBar = document.querySelector(".div-menu-bar-mobile-parent");
-  menuBar.classList.add("close-menu-mobile");
-});
+function closeMenubar(content) {
+  content.addEventListener("click", function () {
+    var menuBar = document.querySelector(".div-menu-bar-mobile-parent");
+    menuBar.classList.add("close-menu-mobile");
+    document.body.classList.toggle("no-scrollbar");
+  });
+}
+
+closeMenubar(body);
+closeMenubar(footer1);
+closeMenubar(footer2);
 
 // Dropdown-content-mobile-dropdown
 document.addEventListener("DOMContentLoaded", function () {
@@ -202,7 +211,6 @@ function hideDropdownMegamenu() {
 }
 
 /////Block-Scroll-menu-bar
-// const megaMenu = document.querySelector(".dropdown-content-mobile-megamenu");
 var hambuger = document.querySelector(".hambuger");
 
 hambuger.addEventListener("click", () => {
