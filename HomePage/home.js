@@ -124,11 +124,14 @@ const footer2 = document.querySelector(".div-copyright-footer");
 function closeMenubar(content) {
   content.addEventListener("click", function () {
     var menuBar = document.querySelector(".div-menu-bar-mobile-parent");
+    var bodyClassList = document.body.classList;
+    var hasNoScrollbarClass = bodyClassList.contains("no-scrollbar");
+    if (hasNoScrollbarClass) {
+      bodyClassList.remove("no-scrollbar");
+    }
     menuBar.classList.add("close-menu-mobile");
-    document.body.classList.toggle("no-scrollbar");
   });
 }
-
 closeMenubar(body);
 closeMenubar(footer1);
 closeMenubar(footer2);
